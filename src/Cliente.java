@@ -11,7 +11,9 @@ public class Cliente {
         if (producto.CantStock >= Cantidad){
             producto.CantStock -= Cantidad;
             productos.add(producto);
-            System.out.println("Se ha realizado una compra "+ "\n"+ "Cantidad: "+ Cantidad + "\n" + "Producto: "+ P);
+            System.out.println("Se ha realizado una compra "+ "\n"+ "Cantidad: "+ Cantidad + "\n" + "Producto: "+ producto.Nombre);
+        }else {
+            System.out.println("Stock insuficiente de: " + producto.Nombre);
         }
 
     }
